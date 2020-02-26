@@ -1,0 +1,39 @@
+(3)	[GUI]Enabled
+(8)	[GUI]Selected:
+(85)	[GUI]System.Xml.XmlException: Root element is missing.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at WeifenLuo.WinFormsUI.Docking.DockPanel.Persistor.LoadFromXml(DockPanel dockPanel, Stream stream, DeserializeDockContent deserializeContent, Boolean closeStream)
+   at WeifenLuo.WinFormsUI.Docking.DockPanel.LoadFromXml(Stream stream, DeserializeDockContent deserializeContent)
+   at CTRE_Phoenix_GUI_Dashboard.frmDashboard.()
+(361)	[BackEnd]Entered State:Connecting
+(941)	[HTTP]System.Exception: Http GET timed out on http://172.22.11.2:1250/?&id=0&action=getversion after 500 ms
+   at CTRE.Phoenix.Diagnostics.HTTP.WebExchange.(String , Int32 )
+   at CTRE.Phoenix.Diagnostics.HTTP.WebExchange.HttpGet(HostNameAndPort hostName, String model, Byte deviceID, ActionType action, String& response, String extraOptions, Int32 timeout)
+(1446)	[ICMP]System.Net.Sockets.SocketException (0x80004005): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at CTRE.Phoenix.Diagnostics.HTTP.IcmpTestConnection.Test(HostNameAndPort hostName, Int32 timeoutMs)
+(1958)	[HTTP]System.Exception: Http GET timed out on http://172.22.11.2:1250/?&id=0&action=getversion after 500 ms
+   at CTRE.Phoenix.Diagnostics.HTTP.WebExchange.(String , Int32 )
+   at CTRE.Phoenix.Diagnostics.HTTP.WebExchange.HttpGet(HostNameAndPort hostName, String model, Byte deviceID, ActionType action, String& response, String extraOptions, Int32 timeout)
+(2459)	[ICMP]System.Net.Sockets.SocketException (0x80004005): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at CTRE.Phoenix.Diagnostics.HTTP.IcmpTestConnection.Test(HostNameAndPort hostName, Int32 timeoutMs)
+(2972)	[HTTP]System.Exception: Http GET timed out on http://172.22.11.2:1250/?&id=0&action=getversion after 500 ms
+   at CTRE.Phoenix.Diagnostics.HTTP.WebExchange.(String , Int32 )
+   at CTRE.Phoenix.Diagnostics.HTTP.WebExchange.HttpGet(HostNameAndPort hostName, String model, Byte deviceID, ActionType action, String& response, String extraOptions, Int32 timeout)
+(2977)	[GUI]Shutting Down Backend...
+(2979)	[BackEnd]Requesting Disposing State
+(3475)	[ICMP]System.Net.Sockets.SocketException (0x80004005): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at CTRE.Phoenix.Diagnostics.HTTP.IcmpTestConnection.Test(HostNameAndPort hostName, Int32 timeoutMs)
+(3475)	[BackEnd]Entered Disposing State
+(3475)	[BackEnd]Waiting for Disposed confirmation.
+(3486)	[BackEnd]Entered State:Disposed
+(3526)	[BackEnd]Disposed confirmation received
+(3528)	[BackEnd]Thread0 shutdown complete
+(3529)	[BackEnd]Thread1 shutdown complete
+(3566)	[BackEnd]Thread2 shutdown complete
